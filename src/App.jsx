@@ -66,7 +66,7 @@ function App() {
         className="text-customTextColor font-bold 
       font-yeseva-One text-xl sm:text-4xl"
       >
-        Password Generator
+        Password Craftsman
       </h1>
       <div
         className="font-josefin-Sans flex flex-col p-6 bg-gray-700
@@ -108,11 +108,17 @@ function App() {
                 setMakeBump((prevVal) => !prevVal);
               }}
             />
-            <label
-            className="relative"
-            htmlFor="length">
+            <label className="relative" htmlFor="length">
               Length:
-              <span className={makeBump ? "text-xl text-customSecondaryColor font-bold transition-all duration-150 ease-in-out absolute bottom-0" : "absolute "}>{passLength}</span>
+              <span
+                className={
+                  makeBump
+                    ? "text-xl text-customSecondaryColor font-bold transition-all duration-150 ease-in-out absolute bottom-0"
+                    : "absolute "
+                }
+              >
+                {passLength}
+              </span>
             </label>
           </div>
           <div className="flex flex-row gap-2">
